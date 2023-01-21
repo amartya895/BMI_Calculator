@@ -187,7 +187,9 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
   }
 
   void onPressedReset() {
+    setState(() {});
     bgColor = Colors.blue.shade100;
+
     wtController.clear();
     ftController.clear();
     inController.clear();
